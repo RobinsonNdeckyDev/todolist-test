@@ -1,0 +1,44 @@
+<!-- Le fichier HTML qui contient l'interface utilisateur. -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gestion d'utilisateurs</title>
+</head>
+
+<body>
+    <h1>Gestion des utilisateurs</h1>
+
+    <!-- <a href="test.html">test</a> -->
+
+    <div class="container">
+        <!-- Formulaire pour ajouter un utilisateur -->
+        <form id="userForm">
+
+            <h2>Ajouter un utilisateur</h2>
+            <input type="text" id="prenom" placeholder="Prénom" required>
+            <input type="text" id="nom" placeholder="Nom" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="adresse" placeholder="Adresse" required>
+            <input type="text" id="profession" placeholder="Profession" required>
+        
+            <!-- Champ caché pour stocker l'index de l'utilisateur à modifier -->
+            <input type="hidden" id="userIndex" value="-1">
+        
+            <!-- Bouton Ajouter / Mettre à jour -->
+            <button type="submit" id="submitBtn">Ajouter</button>
+        </form>
+        
+        <!-- Liste pour afficher les utilisateurs -->
+        <ul id="userList"></ul>
+    </div>
+
+    <!-- Lien vers le fichier JS externe -->
+    <script src="app.js"></script>
+</body>
+
+</html>
